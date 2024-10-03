@@ -1,3 +1,4 @@
+import 'package:bmi_application/second_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -87,13 +88,13 @@ class _BmiState extends State<Bmi> {
                       side: BorderSide(color: Colors.black),
                     ),
                     onPressed: () {
-                      // Navigator.of(context).push(
-                      //   MaterialPageRoute(
-                      //     builder: (context) => HomePage(
-                      //       iswoma: isWoman,
-                      //     ),
-                      //   ),
-                      // ); //
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => second_page(
+                            iswoma: isWoman,
+                          ),
+                        ),
+                      ); //
                     },
                     child: Padding(
                       padding: EdgeInsets.symmetric(horizontal: 20),
