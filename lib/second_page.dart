@@ -1,3 +1,4 @@
+import 'package:bmi_application/bmi_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -105,12 +106,12 @@ class _HomePageState extends State<second_page> {
                       minimumSize: Size(260, 40),
                       side: BorderSide(color: Colors.black)),
                   onPressed: () {
-                    // Navigator.of(context).push(
-                    //   MaterialPageRoute(
-                    //     builder: (context) =>
-                    //         secondPage(weight: _weight, height: _height),
-                    //   ),
-                    // );
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            bmi_page(weight: _weight, height: _height),
+                      ),
+                    );
                   },
                   child: Text(
                     'محاسبه کن',
